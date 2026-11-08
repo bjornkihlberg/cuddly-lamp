@@ -12,8 +12,10 @@ in
     ];
 
     buildInputs = [
+      pkgs.raylib
     ];
 
     shellHook = ''
+      export LD_LIBRARY_PATH=${pkgs.raylib}/lib:$LD_LIBRARY_PATH
     '';
   }

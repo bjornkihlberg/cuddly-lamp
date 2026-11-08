@@ -4,7 +4,7 @@
 
 ./bin/app: ./obj/main.o
 	mkdir -p ./bin
-	clang++ ./obj/main.o -o ./bin/app
+	clang++ ./obj/main.o -o ./bin/app -lraylib
 
 run: ./bin/app
 	./bin/app
